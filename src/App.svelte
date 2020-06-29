@@ -1,7 +1,9 @@
 <script lang="ts">
 	import SpeechButton from "./speech-button/SpeechButton.svelte";
-
 	import {thing} from "./test";
+	// @ts-ignore
+	const clientSocket = io();
+	console.log("SOCKET", clientSocket);
 </script>
 
 <main>
