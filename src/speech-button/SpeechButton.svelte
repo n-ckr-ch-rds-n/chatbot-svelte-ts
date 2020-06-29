@@ -1,4 +1,10 @@
-<button>Talk</button>
+<script>
+    function handleClick() {
+        console.log("clicked");
+    }
+</script>
+
+<button on:click={handleClick}>Talk</button>
 
 <style>
     button {
