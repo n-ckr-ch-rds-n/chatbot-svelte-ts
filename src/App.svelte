@@ -1,13 +1,13 @@
 <script lang="ts">
 	import SpeechButton from "./speech-button/SpeechButton.svelte";
+	import {RecognitionFactory} from "./recognition-factory/recognition-factory";
 
-	let num: number = 42;
+	const recognition: SpeechRecognition = RecognitionFactory.create();
 	import {thing} from "./test";
 </script>
 
 <main>
 	<h1>Hello {thing}!</h1>
-	<p>Visit the {num}</p>
 	<SpeechButton/>
 </main>
 
