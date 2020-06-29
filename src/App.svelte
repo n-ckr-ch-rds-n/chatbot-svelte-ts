@@ -1,8 +1,6 @@
 <script lang="ts">
 	import SpeechButton from "./speech-button/SpeechButton.svelte";
-	import {RecognitionFactory} from "./recognition-factory/recognition-factory";
 
-	const recognition: SpeechRecognition = RecognitionFactory.create();
 	import {thing} from "./test";
 </script>
 

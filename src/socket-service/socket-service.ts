@@ -1,9 +1,8 @@
 import {VoiceSynthesiser} from "../voice-synthesiser/voice-synthesiser";
-import {Socket} from "socket.io";
 
 export class SocketService {
 
-    constructor(private socket: Socket,
+    constructor(private socket: any,
                 private voiceSynth: VoiceSynthesiser) {
         this.socket.on("bot reply", (text: string) => this.handleReply(text))
     }

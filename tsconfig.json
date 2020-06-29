@@ -4,6 +4,7 @@
   "compilerOptions": {
     "target": "es2017",
     "types": ["svelte"],
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
   }
 }
