@@ -9,7 +9,7 @@ import {IoServer} from "./server/io-server/io-server";
 
 dotenv.config();
 
-const expressServer = new ExpressServer(express(), __dirname + '/dist');
+const expressServer = new ExpressServer(express(), __dirname + '/public');
 const serverInstance = expressServer.start(5000);
 const chatbotService = new ChatbotService(apiai(process.env.APIAI_TOKEN as string));
 const ioServer = new IoServer(io(serverInstance), chatbotService);

@@ -4,7 +4,8 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "sirv public",
+    "server": "npx ts-node index.ts"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^13.0.0",
