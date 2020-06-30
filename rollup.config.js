@@ -18,6 +18,10 @@ export default {
         name: 'app',
         file: 'public/build/bundle.js'
     },
+    external: ['socket.io-client'],
+    globals: {
+        'socket.io-client': 'io',
+    },
     plugins: [
         svelte({
             // enable run-time checks when not in production
@@ -57,8 +61,7 @@ export default {
     ],
     watch: {
         clearScreen: false
-    },
-    external: ["bufferutil"]
+    }
 };
 
 function serve() {

@@ -12,6 +12,7 @@
     "@rollup/plugin-typescript": "^5.0.1",
     "@types/socket.io": "^2.1.8",
     "@types/socket.io-client": "^1.4.33",
+    "dotenv": "^8.2.0",
     "express-serve-static-core": "^0.1.1",
     "rollup": "^2.3.4",
     "rollup-plugin-livereload": "^1.0.0",
